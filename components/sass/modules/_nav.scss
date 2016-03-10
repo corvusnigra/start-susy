@@ -1,0 +1,15 @@
+header {
+	@include container(1300px);
+	.logo {
+		@include span(2 of 12);
+	}
+	.nav-wrap {
+		@include span(8 of 12);
+		@include breakpoint(max-width 800px) {
+			@include span(12);
+		}
+	}
+	.items-right {
+		@include span(2 of 12);
+	}
+}
